@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	
+	<typeAliases>
+<!-- 		<typeAlias type="kr.or.itjob.user.model.UserVo" alias="userVo"/> -->
+		<typeAlias type="kr.or.itjob.model.ItJobUserVo" alias="userVo"/>	
+		<typeAlias type="kr.or.itjob.model.ItJobComUsersVo" alias="comUsersVo"/>	
+		<typeAlias type="kr.or.itjob.model.ItJobAdminVo" alias="adminVo"/>	
+		<!--  Job Model -->
+		<typeAlias type="kr.or.itjob.model.Job_BoardVo" alias="job_BoardVo"/>
+		<typeAlias type="kr.or.itjob.model.JobCateVo" alias="jobCateVo"/>
+		<typeAlias type="kr.or.itjob.model.CalenderVo" alias="CalenderVo"/>
+		<typeAlias type="kr.or.itjob.model.WelfareVo" alias="welfareVo"/>
+		
+		<!-- page Model -->
+		<typeAlias type="kr.or.itjob.model.PageVo" alias="pageVo"/>
+	</typeAliases>
+	
+
+<!--   mapper와 연결  -->
+  <mappers>
+    
+    <mapper resource="kr/or/itjob/config/mybatis/mapper/job_board.xml"/>
+    <mapper resource="kr/or/itjob/config/mybatis/mapper/user.xml" />
+	<mapper resource="kr/or/itjob/config/mybatis/mapper/com_users.xml" />
+	<mapper resource="kr/or/itjob/config/mybatis/mapper/admin.xml" />
+ 
+  </mappers>
+</configuration>

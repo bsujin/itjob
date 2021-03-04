@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jobBoard">
+
+  <select id="selectAllJob_Board" resultType="job_BoardVo">
+    SELECT * FROM job_board
+  </select>
+  
+  <select id="selectCom_user" resultType="comUsersVo" parameterType="String">
+  	SELECT * FROM job_board WHERE com_id = #{com_id} 
+  </select>
+  
+  <select id="pagingJob_Board" resultType="job_BoardVo" parameterType="pageVo">
+  	SELECT *
+	FROM
+		(SELECT ROWNUM rn, a.*
+	FROM
+   		 (SELECT *
+   			 FROM job_board
+   			 ORDER BY job_date desc)a
+   	 WHERE ROWNUM &lt;= #{page} * #{pageSize})
+	WHERE rn BETWEEN (#{page}-1) * #{pageSize}+1 AND #{page} * #{pageSize}
+  </select>
+  
+  <select id="countAllJob_Board" resultType="int">
+   SELECT COUNT(*) FROM job_board 
+  </select>
+  
+<!--   <select id="selectjob_Board" resultType="job_BoardVo" parameterType="job_BoardVo"> -->
+<!--   	SELECT *  -->
+<!--   	FROM job_board  -->
+<!--   	WHERE  com_id = #{com_id}  -->
+<!--   	and job_title = #{job_title} -->
+<!--   </select> -->
+  
+  <select id="selectjob_Board" resultType="job_BoardVo" parameterType="job_BoardVo">
+  	select * 
+	from job_board k ,com_users c
+	where k.com_id = c.com_id;
+  </select>
+  
+</mapper>
+

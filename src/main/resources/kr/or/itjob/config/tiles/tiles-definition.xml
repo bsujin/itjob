@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+   <!-- admin Main화면 -->    
+  <definition name=".admin" template="/WEB-INF/tileLayout/adminLayout.jsp">
+    <put-attribute name="header" value="/WEB-INF/common/admin/header.jsp" />
+    <put-attribute name="left" value="/WEB-INF/common/admin/left_nav.jsp" />
+    <put-attribute name="right" value="/WEB-INF/common/admin/right_nav.jsp" />
+    <put-attribute name="body" value="" />
+    <put-attribute name="footer" value="/WEB-INF/common/admin/footer.jsp" />
+  </definition>
+  
+   <!-- itjob Main화면 -->    
+    <definition name=".jobmain" template="/WEB-INF/tileLayout/itjobLayout.jsp">
+    	<put-attribute name="header" value="/WEB-INF/common/itjob/header.jsp" />
+    	<put-attribute name="left" value="/WEB-INF/common/itjob/left_nav.jsp" />
+   		<put-attribute name="right" value="/WEB-INF/common/itjob/right_nav.jsp" />
+     	 <put-attribute name="body" value="" />   
+      	<put-attribute name="footer" value="/WEB-INF/common/itjob/footer.jsp" />
+    </definition>
+    
+   <!-- login 화면 -->    
+    <definition name=".login" template="/WEB-INF/tileLayout/loginLayout.jsp">
+    	<put-attribute name="header" value="/WEB-INF/common/itjob/header.jsp" />
+    	<put-attribute name="left" value="/WEB-INF/common/itjob/left_nav.jsp" />
+   		<put-attribute name="right" value="/WEB-INF/common/itjob/right_nav.jsp" />
+     	 <put-attribute name="body" value="" />   
+      	<put-attribute name="footer" value="/WEB-INF/common/itjob/footer.jsp" />
+    </definition>
+    
+    
+<!--      coding Test 화면  -->
+<!--     <definition name=".codingTest" template="/WEB-INF/tileLayout/codingTestlayout.jsp"> -->
+<!--     	<put-attribute name="header" value="/WEB-INF/common/admin/header.jsp" /> -->
+<!--     	<put-attribute name="left" value="/WEB-INF/common/itjob/left_nav.jsp" /> -->
+<!--      	<put-attribute name="menu" value="" />         -->
+<!--       	<put-attribute name="footer" value="/WEB-INF/common/itjob/footer.jsp" /> -->
+<!--     </definition> -->
+
+<!--      calendar 화면  -->
+<!--     <definition name=".calendar" template="/WEB-INF/tileLayout/calendarLayout.jsp"> -->
+<!--     	<put-attribute name="header" value="/WEB-INF/common/itjob/header.jsp" /> -->
+<!--     	<put-attribute name="left" value="/WEB-INF/common/itjob/left_nav.jsp" /> -->
+<!--    		<put-attribute name="right" value="/WEB-INF/common/itjob/right_nav.jsp" /> -->
+<!--      	 <put-attribute name="body" value="" />       -->
+<!--       	<put-attribute name="footer" value="/WEB-INF/common/itjob/footer.jsp" /> -->
+<!--     </definition> -->
+
+ <definition name="/adminlogin/*" extends=".admin">
+  	<put-attribute name="body" value="/WEB-INF/login/{1}.jsp"/>
+  </definition>
+
+  <definition name="/admin/*" extends=".admin">
+  	<put-attribute name="body" value="/WEB-INF/admin/{1}.jsp"/>
+  </definition>
+    
+  <definition name="/login/*" extends=".login">
+  	<put-attribute name="body" value="/WEB-INF/login/{1}.jsp"/>
+  </definition>
+ 
+  <definition name="/itjob/*" extends=".jobmain">
+  	<put-attribute name="body" value="/WEB-INF/itjob/{1}.jsp"/>
+  </definition>
+  
+  <definition name="/user/*" extends=".jobmain">
+  	<put-attribute name="body" value="/WEB-INF/user/{1}/{2}/.jsp"/>
+  </definition>
+  
+  <definition name="/com_user/*" extends=".jobmain">
+  	<put-attribute name="body" value="/WEB-INF/com_user/{1}/{2}/.jsp"/>
+  </definition>
+  
+</tiles-definitions>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="user">
+	<!-- 전체조회 -->
+	
+	<select id="selectAllUser" resultType="userVo">
+		SELECT * FROM users
+	</select>
+	
+	<!-- 아이디 -->
+	
+	<select id="selectUser" resultType="userVo" parameterType="String">
+		SELECT * FROM users WHERE users_id = #{users_id}
+	</select>
+	
+	<insert id="insertUser" parameterType="userVo">
+	
+		INSERT INTO users 
+		(users_num,users_id,users_com,users_nm,users_pass,users_em,users_logindate,users_passfailcnt,users_act,act_dt)
+		values(
+		(select NVL(MAX(users_num),0)+1 from users),
+		#{users_id},
+		#{users_com},
+		#{users_nm},
+		#{users_pass},
+		#{users_em},
+		sysdate,
+		#{users_passfailcnt},
+		#{users_act},
+		sysdate)
+		
+	</insert>
+	
+	
+	
+</mapper>
