@@ -1,8 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
-    
-    
 <!-- catagory_area -->
     <div class="catagory_area">
         <div class="container">
@@ -71,49 +68,49 @@
             <div class="row">
                 <div class="col-lg-4 col-xl-3 col-md-6">
                     <div class="single_catagory">
-                        <a href="jobs.html"><h4>Design & Creative</h4></a>
+                        <a href="${cp }/itjob/jobs.html"><h4>Design & Creative</h4></a>
                         <p> <span>50</span> Available position</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xl-3 col-md-6">
                     <div class="single_catagory">
-                        <a href="jobs.html"><h4>Marketing</h4></a>
+                        <a href="${cp }/itjob/jobs.html"><h4>Marketing</h4></a>
                         <p> <span>50</span> Available position</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xl-3 col-md-6">
                     <div class="single_catagory">
-                        <a href="jobs.html"><h4>Telemarketing</h4></a>
+                        <a href="${cp }/itjob/jobs.html"><h4>Telemarketing</h4></a>
                         <p> <span>50</span> Available position</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xl-3 col-md-6">
                     <div class="single_catagory">
-                        <a href="jobs.html"><h4>Software & Web</h4></a>
+                        <a href="${cp }/itjob/jobs.html"><h4>Software & Web</h4></a>
                         <p> <span>50</span> Available position</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xl-3 col-md-6">
                     <div class="single_catagory">
-                        <a href="jobs.html"><h4>Administration</h4></a>
+                        <a href="${cp }/itjob/jobs.html"><h4>Administration</h4></a>
                         <p> <span>50</span> Available position</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xl-3 col-md-6">
                     <div class="single_catagory">
-                        <a href="jobs.html"><h4>Teaching & Education</h4></a>
+                        <a href="${cp }/itjob/jobs.html"><h4>Teaching & Education</h4></a>
                         <p> <span>50</span> Available position</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xl-3 col-md-6">
                     <div class="single_catagory">
-                        <a href="jobs.html"><h4>Engineering</h4></a>
+                        <a href="${cp }/itjob/jobs.html"><h4>Engineering</h4></a>
                         <p> <span>50</span> Available position</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xl-3 col-md-6">
                     <div class="single_catagory">
-                        <a href="jobs.html"><h4>Garments / Textile</h4></a>
+                        <a href="${cp }/itjob/jobs.html"><h4>Garments / Textile</h4></a>
                         <p> <span>50</span> Available position</p>
                     </div>
                 </div>
@@ -133,7 +130,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="brouse_job text-right">
-                        <a href="jobs.html" class="boxed-btn4">Browse More Job</a>
+                        <a href="${cp }/itjob/jobs.html" class="boxed-btn4">Browse More Job</a>
                     </div>
                 </div>
             </div>
@@ -143,10 +140,10 @@
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="img/svg_icon/1.svg" alt="">
+                                    <img src="${cp }/itjob/img/svg_icon/1.svg" alt="">
                                 </div>
                                 <div class="jobs_conetent">
-                                    <a href="job_details.html"><h4>Software Engineer</h4></a>
+                                    <a href="${cp }/itjob/job_details.html"><h4>Software Engineer</h4></a>
                                     <div class="links_locat d-flex align-items-center">
                                         <div class="location">
                                             <p> <i class="fa fa-map-marker"></i> California, USA</p>
@@ -160,7 +157,7 @@
                             <div class="jobs_right">
                                 <div class="apply_now">
                                     <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
-                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>
+                                    <a href="${cp }/itjob/job_details.html" class="boxed-btn3">Apply Now</a>
                                 </div>
                                 <div class="date">
                                     <p>Date line: 31 Jan 2020</p>
@@ -172,7 +169,7 @@
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="img/svg_icon/2.svg" alt="">
+                                    <img src="${cp }/itjob/img/svg_icon/2.svg" alt="">
                                 </div>
                                 <div class="jobs_conetent">
                                     <a href="job_details.html"><h4>Digital Marketer</h4></a>
@@ -189,7 +186,7 @@
                             <div class="jobs_right">
                                 <div class="apply_now">
                                     <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
-                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>
+                                    <a href="${cp }/itjob/job_details.html" class="boxed-btn3">Apply Now</a>
                                 </div>
                                 <div class="date">
                                     <p>Date line: 31 Jan 2020</p>
@@ -201,10 +198,10 @@
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="img/svg_icon/3.svg" alt="">
+                                    <img src="${cp }/itjob/img/svg_icon/3.svg" alt="">
                                 </div>
                                 <div class="jobs_conetent">
-                                    <a href="job_details.html"><h4>Wordpress Developer</h4></a>
+                                    <a href="${cp }/itjob/job_details.html"><h4>Wordpress Developer</h4></a>
                                     <div class="links_locat d-flex align-items-center">
                                         <div class="location">
                                             <p> <i class="fa fa-map-marker"></i> California, USA</p>
@@ -218,7 +215,7 @@
                             <div class="jobs_right">
                                 <div class="apply_now">
                                     <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
-                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>
+                                    <a href="${cp }/itjob/job_details.html" class="boxed-btn3">Apply Now</a>
                                 </div>
                                 <div class="date">
                                     <p>Date line: 31 Jan 2020</p>
@@ -230,7 +227,7 @@
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="img/svg_icon/4.svg" alt="">
+                                    <img src="${cp }/itjob/img/svg_icon/4.svg" alt="">
                                 </div>
                                 <div class="jobs_conetent">
                                     <a href="job_details.html"><h4>Visual Designer</h4></a>
@@ -247,7 +244,7 @@
                             <div class="jobs_right">
                                 <div class="apply_now">
                                     <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
-                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>
+                                    <a href="${cp }/itjob/job_details.html" class="boxed-btn3">Apply Now</a>
                                 </div>
                                 <div class="date">
                                     <p>Date line: 31 Jan 2020</p>
@@ -259,7 +256,7 @@
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="img/svg_icon/5.svg" alt="">
+                                    <img src="${cp }/itjob/img/svg_icon/5.svg" alt="">
                                 </div>
                                 <div class="jobs_conetent">
                                     <a href="job_details.html"><h4>Software Engineer</h4></a>
@@ -276,7 +273,7 @@
                             <div class="jobs_right">
                                 <div class="apply_now">
                                     <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
-                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>
+                                    <a href="${cp }/itjob/job_details.html" class="boxed-btn3">Apply Now</a>
                                 </div>
                                 <div class="date">
                                     <p>Date line: 31 Jan 2020</p>
@@ -288,7 +285,7 @@
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="img/svg_icon/1.svg" alt="">
+                                    <img src="${cp }/itjob/img/svg_icon/1.svg" alt="">
                                 </div>
                                 <div class="jobs_conetent">
                                     <a href="job_details.html"><h4>Creative Designer</h4></a>

@@ -17,7 +17,7 @@ import kr.or.itjob.model.ItJobAdminVo;
 import kr.or.itjob.model.ItJobComUsersVo;
 import kr.or.itjob.model.ItJobUserVo;
 
-@RequestMapping("itjob")
+@RequestMapping("login")
 @Controller
 public class ItJobLoginController {
 	
@@ -39,8 +39,9 @@ public class ItJobLoginController {
 	
 	@RequestMapping("login")
 	public String loginView() {
-		return "login";
+		return "/login/login";
 	}
+	
 	
 	/**
 	 * user로그인페이지
@@ -53,17 +54,17 @@ public class ItJobLoginController {
 	
 	@RequestMapping(path="userloginview", method = RequestMethod.GET)
 	public String userloginView() {
-		return "userloginview";	
+		return "/login/login";	
 	}
 	
 	@RequestMapping("comloginview")
 	public String comloginview() {
-		return "comloginview";
+		return "login/login";
 	}
 	
 	@RequestMapping("adminloginview")
 	public String adminloginview() {
-		return "adminloginview";
+		return "/adminview/login";
 	}
 	
 	/**
@@ -75,7 +76,7 @@ public class ItJobLoginController {
 	 */
 	
 	@RequestMapping(path = "userloginok", method = RequestMethod.POST)
-	public String userloginOk(ItJobUserVo userVo, HttpSession session, RedirectAttributes ra) {
+	public String userloginOk(ItJobUserVo userVo, String usercheck,  HttpSession session, RedirectAttributes ra) {
 		ItJobUserVo dbUser = itjobuserService.selectUser(userVo.getUsers_id());
 		
 		if(dbUser != null && userVo.getUsers_pass().equals(dbUser.getUsers_pass())) {
@@ -83,7 +84,7 @@ public class ItJobLoginController {
 			return "itjobusermain";
 		}else {
 			ra.addFlashAttribute("msg",	"로그인 정보가 옳지 않습니다");
-			return "redirect:/itjob/userloginview";
+			return "redirect:/login/userloginview";
 		}
 		
 	}

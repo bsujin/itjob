@@ -15,4 +15,4 @@
     <link rel="stylesheet" href="${cp }/itjob/css/gijgo.css">
     <link rel="stylesheet" href="${cp }/itjob/css/slicknav.css">
     <link rel="stylesheet" href="${cp }/itjob/css/style.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+<%--     <link rel="stylesheet" href="${cp }/itjob/css/responsive.css"> --%>

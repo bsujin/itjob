@@ -12,10 +12,9 @@
 <title>Job Board</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <%@include file="/WEB-INF/common/itjob/itjob_lib.jsp"%>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
-
 <body>
 	<header>
 		<tiles:insertAttribute name="header" />
@@ -26,6 +25,5 @@
 	<tiles:insertAttribute name="footer" />
 	</footer>
 	<!--/ footer end  -->
-	
 </body>
 </html>

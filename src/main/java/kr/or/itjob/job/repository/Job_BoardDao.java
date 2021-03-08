@@ -7,7 +7,7 @@ import javax.annotation.Resource;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.stereotype.Repository;
 
-import kr.or.itjob.job.model.Job_BoardVo;
+import kr.or.itjob.model.Job_BoardVo;
 import kr.or.itjob.page.model.PageVo;
 
 @Repository("jobBoardDao")

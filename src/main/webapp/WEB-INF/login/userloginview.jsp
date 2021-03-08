@@ -28,8 +28,6 @@
  				$('#frm').attr("action","/itjob/usersignview");
  				$('#frm').submit();
  			})
- 			
- 			
  		})
  		
  	</script>

@@ -2,7 +2,7 @@ package kr.or.itjob.job.repository;
 
 import java.util.List;
 
-import kr.or.itjob.job.model.Job_BoardVo;
+import kr.or.itjob.model.Job_BoardVo;
 import kr.or.itjob.page.model.PageVo;
 
 public interface Job_BoardDaoI {

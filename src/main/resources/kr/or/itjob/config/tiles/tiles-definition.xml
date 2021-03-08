@@ -16,8 +16,8 @@
    <!-- itjob Main화면 -->    
     <definition name=".jobmain" template="/WEB-INF/tileLayout/itjobLayout.jsp">
     	<put-attribute name="header" value="/WEB-INF/common/itjob/header.jsp" />
-    	<put-attribute name="left" value="/WEB-INF/common/itjob/left_nav.jsp" />
-   		<put-attribute name="right" value="/WEB-INF/common/itjob/right_nav.jsp" />
+<!--     	<put-attribute name="left" value="/WEB-INF/common/itjob/left_nav.jsp" /> -->
+<!--    		<put-attribute name="right" value="/WEB-INF/common/itjob/right_nav.jsp" /> -->
      	 <put-attribute name="body" value="" />   
       	<put-attribute name="footer" value="/WEB-INF/common/itjob/footer.jsp" />
     </definition>
@@ -25,8 +25,8 @@
    <!-- login 화면 -->    
     <definition name=".login" template="/WEB-INF/tileLayout/loginLayout.jsp">
     	<put-attribute name="header" value="/WEB-INF/common/itjob/header.jsp" />
-    	<put-attribute name="left" value="/WEB-INF/common/itjob/left_nav.jsp" />
-   		<put-attribute name="right" value="/WEB-INF/common/itjob/right_nav.jsp" />
+<!--     	<put-attribute name="left" value="/WEB-INF/common/itjob/left_nav.jsp" /> -->
+<!--    		<put-attribute name="right" value="/WEB-INF/common/itjob/right_nav.jsp" /> -->
      	 <put-attribute name="body" value="" />   
       	<put-attribute name="footer" value="/WEB-INF/common/itjob/footer.jsp" />
     </definition>

@@ -31,7 +31,7 @@
                                                     <li><a href="${cp }/itjobView/singleblog">single-blog</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="${cp }/itjobView/contact.html">Contact</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -52,9 +52,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
-                            </div>
+<!--                             <div class="col-12"> -->
+<!--                                 <div class="mobile_menu d-block d-lg-none"></div> -->
+<!--                             </div> -->
                         </div>
                     </div>
                 </div>

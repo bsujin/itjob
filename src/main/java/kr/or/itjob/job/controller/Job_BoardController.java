@@ -23,20 +23,19 @@ public class Job_BoardController {
 		return "Main";
 	}
 	
-	
 	@RequestMapping(path = "job_BoardList", method = RequestMethod.GET)
 	public String pagingJob_Board(@RequestParam(defaultValue = "1") int page, @RequestParam(defaultValue = "10") int pageSize,
 			Model model) {
 		 model.addAllAttributes(job_BoardService.PagingJob_Board(new PageVo(page, pageSize)));
-		return "job_board/job_BoardMain";
+		return "/itjob/jobs";
 	}
 	
-	@RequestMapping(path = "detailjob_Board", method = RequestMethod.GET)
-	public String detailjob_Board(@RequestParam(defaultValue = "1") int page, @RequestParam(defaultValue = "10") int pageSize,
-			Model model) {
-		model.addAllAttributes(job_BoardService.PagingJob_Board(new PageVo(page, pageSize)));
-		return "job_board/job_BoardMain";
-	}
+//	@RequestMapping(path = "detailjob_Board", method = RequestMethod.GET)
+//	public String detailjob_Board(Job_BoardVo jobBoardVo, Model model) {
+//		model.addAllAttributes(job_BoardService.PagingJob_Board(new PageVo(page, pageSize)));
+//		return "job_board/job_BoardMain";
+//		return " /itjob/job_details";
+//	}
 	
 	
 

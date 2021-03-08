@@ -26,5 +26,4 @@
     <script src="${cp}/itjob/js/jquery.form.js"></script>
     <script src="${cp}/itjob/js/jquery.validate.min.js"></script>
     <script src="${cp}/itjob/js/mail-script.js"></script>
-
     <script src="${cp}/itjob/js/main.js"></script>
